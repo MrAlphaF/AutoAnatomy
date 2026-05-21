@@ -11,6 +11,7 @@ public class PartInteractor : MonoBehaviour
 
     [Header("References")]
     [SerializeField] private Camera playerCamera;
+    [SerializeField] private InfoPanel infoPanel;
 
     private Part hoveredPart;
 
@@ -23,6 +24,7 @@ public class PartInteractor : MonoBehaviour
     {
         UpdateHover();
         if (Input.GetMouseButtonDown(0)) HandleClick();
+        if (Input.GetMouseButtonDown(1) && infoPanel != null) infoPanel.Hide();
     }
 
     private void UpdateHover()
@@ -49,6 +51,8 @@ public class PartInteractor : MonoBehaviour
 
     private void HandleClick()
     {
-        if (hoveredPart != null) hoveredPart.OnSelected();
+        if (hoveredPart == null) return;
+        hoveredPart.OnSelected();
+        if (infoPanel != null) infoPanel.Show(hoveredPart);
     }
 }

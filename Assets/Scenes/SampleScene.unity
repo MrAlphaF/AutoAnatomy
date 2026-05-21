@@ -158,8 +158,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 337a6d78eae1b0341abf98af6dda2272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Part
-  partName: 
-  description: 
+  partName: Spararats
+  description: "T\u0101 galvenais uzdevums ir uzkr\u0101t rot\u0101cijas ener\u0123iju
+    un nodro\u0161in\u0101t vienm\u0113r\u012Bgu motora darb\u012Bbu. Spararats ir
+    piestiprin\u0101ts pie klo\u0137v\u0101rpstas un pal\u012Bdz samazin\u0101t vibr\u0101cijas
+    starp cilindru darba cikliem. Pie t\u0101 ar\u012B parasti tiek stiprin\u0101ts
+    saj\u016Bgs vai autom\u0101tisk\u0101s k\u0101rbas hidrotransformators."
   logSelection: 1
 --- !u!1 &38522031 stripped
 GameObject:
@@ -245,6 +249,110 @@ MonoBehaviour:
   partName: 
   description: 
   logSelection: 1
+--- !u!1 &150245913
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 150245914}
+  - component: {fileID: 150245916}
+  - component: {fileID: 150245915}
+  - component: {fileID: 150245917}
+  m_Layer: 5
+  m_Name: InfoPanelRoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &150245914
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150245913}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1009236322}
+  - {fileID: 1093095262}
+  m_Father: {fileID: 1142548549}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -20, y: 0}
+  m_SizeDelta: {x: 320, y: 400}
+  m_Pivot: {x: 1, y: 0.5}
+--- !u!114 &150245915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150245913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.078431375, g: 0.078431375, b: 0.078431375, a: 0.8627451}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &150245916
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150245913}
+  m_CullTransparentMesh: 1
+--- !u!114 &150245917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150245913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.VerticalLayoutGroup
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 10
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &176690408 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9221036063881223841, guid: ce8aaf77464a1ad4da94559f0225d29a, type: 3}
@@ -746,8 +854,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 337a6d78eae1b0341abf98af6dda2272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Part
-  partName: 
-  description: 
+  partName: Motora bloks
+  description: "T\u0101 galvenais uzdevums ir kalpot k\u0101 motora galvenajai konstrukcijai,
+    kur\u0101 atrodas cilindri, virzu\u013Ci, klo\u0137v\u0101rpsta un daudzas citas
+    svar\u012Bgas deta\u013Cas. Pie motora bloka tiek stiprin\u0101tas ar\u012B cilindru
+    galvas, karteris un citas dzin\u0113ja sist\u0113mas. Tas ir dzin\u0113ja \u201Cpamats\u201D,
+    kas satur un savieno visas galven\u0101s komponentes vien\u0101 meh\u0101nism\u0101."
   logSelection: 1
 --- !u!1 &422732315 stripped
 GameObject:
@@ -956,8 +1068,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 337a6d78eae1b0341abf98af6dda2272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Part
-  partName: 
-  description: 
+  partName: "Iepl\u016Bdes kolektors"
+  description: "T\u0101 galvenais uzdevums ir vienm\u0113r\u012Bgi pievad\u012Bt
+    gaisu visiem motora cilindriem. V8 dzin\u0113j\u0101 iepl\u016Bdes kolektors
+    atrodas motora centr\u0101 starp ab\u0101m cilindru rind\u0101m un nodro\u0161ina
+    gaisa padevi degmais\u012Bjuma sadeg\u0161anai. Kolektora kan\u0101li pal\u012Bdz
+    optimiz\u0113t gaisa pl\u016Bsmu, uzlabojot dzin\u0113ja jaudu un griezes momentu."
   logSelection: 1
 --- !u!1 &486189130 stripped
 GameObject:
@@ -1040,8 +1156,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 337a6d78eae1b0341abf98af6dda2272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Part
-  partName: 
-  description: 
+  partName: Zobsiksna
+  description: "T\u0101s galvenais uzdevums ir sinhroniz\u0113t klo\u0137v\u0101rpstas
+    un sadales v\u0101rpstu darb\u012Bbu, lai dzin\u0113ja v\u0101rsti un virzu\u013Ci
+    kust\u0113tos prec\u012Bzi pareizaj\u0101 laik\u0101. Ja zobsiksna p\u0101rtr\u016Bkst
+    vai p\u0101rlec, motors var g\u016Bt \u013Coti nopietnus boj\u0101jumus."
   logSelection: 1
 --- !u!1 &533737671 stripped
 GameObject:
@@ -1082,8 +1201,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 337a6d78eae1b0341abf98af6dda2272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Part
-  partName: 
-  description: 
+  partName: "Klo\u0137v\u0101rpsta"
+  description: "T\u0101s galvenais uzdevums ir p\u0101rv\u0113rst virzu\u013Cu line\u0101ro
+    kust\u012Bbu rot\u0101cijas kust\u012Bb\u0101. Klo\u0137v\u0101rpsta ir viena
+    no svar\u012Bg\u0101kaj\u0101m dzin\u0113ja deta\u013C\u0101m, jo t\u0101 nodod
+    motora jaudu t\u0101l\u0101k uz transmisiju un cit\u0101m sist\u0113m\u0101m.
+    Pie t\u0101s ir piestiprin\u0101ti kla\u0146i un virzu\u013Ci, kas kust\u012Bbas
+    laik\u0101 grie\u017E v\u0101rpstu."
   logSelection: 1
 --- !u!1 &535800743 stripped
 GameObject:
@@ -1418,8 +1542,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 337a6d78eae1b0341abf98af6dda2272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Part
-  partName: 
-  description: 
+  partName: Cilindru galva
+  description: "T\u0101s galvenais uzdevums ir nosl\u0113gt cilindrus no aug\u0161puses
+    un nodro\u0161in\u0101t vietu svar\u012Bg\u0101m dzin\u0113ja komponent\u0113m,
+    piem\u0113ram, v\u0101rstiem, sadales v\u0101rpst\u0101m, svec\u0113m vai sprausl\u0101m.
+    Cilindru galva ir viena no svar\u012Bg\u0101kaj\u0101m motora da\u013C\u0101m,
+    jo taj\u0101 notiek degmais\u012Bjuma iepl\u016Bde, sadeg\u0161ana un izpl\u016Bdes
+    g\u0101zu novad\u012B\u0161ana."
   logSelection: 1
 --- !u!1 &673095119 stripped
 GameObject:
@@ -1795,9 +1924,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5441295411426429167, guid: ce8aaf77464a1ad4da94559f0225d29a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5441295411426429167, guid: ce8aaf77464a1ad4da94559f0225d29a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.008
+      objectReference: {fileID: 0}
+    - target: {fileID: -1439730007547781893, guid: ce8aaf77464a1ad4da94559f0225d29a, type: 3}
+      propertyPath: m_RayTraceProcedural
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ce8aaf77464a1ad4da94559f0225d29a, type: 3}
       propertyPath: m_Name
       value: V8Engine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3095402264176031219, guid: ce8aaf77464a1ad4da94559f0225d29a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3095402264176031219, guid: ce8aaf77464a1ad4da94559f0225d29a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.002
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2526,9 +2675,169 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 337a6d78eae1b0341abf98af6dda2272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Part
-  partName: 
-  description: 
+  partName: "V\u0101rstu v\u0101ks"
+  description: "T\u0101 galvenais uzdevums ir nosegt motora v\u0101rstu meh\u0101nismu
+    un notur\u0113t motore\u013C\u013Cu dzin\u0113ja iek\u0161pus\u0113. Tas ar\u012B
+    aizsarg\u0101 dzin\u0113ja komponentes no net\u012Brumiem un mitruma"
   logSelection: 1
+--- !u!1 &1009236321
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1009236322}
+  - component: {fileID: 1009236323}
+  - component: {fileID: 1009236324}
+  - component: {fileID: 1009236325}
+  m_Layer: 5
+  m_Name: TitleText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1009236322
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009236321}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 150245914}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 320, y: 201.70502}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1009236323
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009236321}
+  m_CullTransparentMesh: 1
+--- !u!114 &1009236324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009236321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Deta\u013Cas nosaukums"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 28
+  m_fontSizeBase: 28
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1009236325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009236321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.LayoutElement
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
 --- !u!1 &1077194142
 GameObject:
   m_ObjectHideFlags: 0
@@ -2726,6 +3035,164 @@ MonoBehaviour:
   partName: 
   description: 
   logSelection: 1
+--- !u!1 &1093095259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1093095262}
+  - component: {fileID: 1093095261}
+  - component: {fileID: 1093095260}
+  - component: {fileID: 1093095263}
+  m_Layer: 5
+  m_Name: BodyText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1093095260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093095259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Deta\u013Cas apraksts...\n\n"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4292072403
+  m_fontColor: {r: 0.8274511, g: 0.8274511, b: 0.8274511, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 20
+  m_fontSizeBase: 20
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1093095261
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093095259}
+  m_CullTransparentMesh: 1
+--- !u!224 &1093095262
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093095259}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 150245914}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 320, y: 188.29501}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1093095263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093095259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.LayoutElement
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: 1
+  m_LayoutPriority: 1
 --- !u!1 &1096986056 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5722315222512314903, guid: ce8aaf77464a1ad4da94559f0225d29a, type: 3}
@@ -2852,6 +3319,124 @@ MonoBehaviour:
   partName: 
   description: 
   logSelection: 1
+--- !u!1 &1142548544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1142548549}
+  - component: {fileID: 1142548548}
+  - component: {fileID: 1142548547}
+  - component: {fileID: 1142548546}
+  - component: {fileID: 1142548545}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1142548545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142548544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4ab86b1beda59f4ab7fda69a37c9aa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InfoPanel
+  panelRoot: {fileID: 150245913}
+  titleText: {fileID: 1009236324}
+  bodyText: {fileID: 1093095260}
+--- !u!114 &1142548546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142548544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GraphicRaycaster
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1142548547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142548544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1142548548
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142548544}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &1142548549
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142548544}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 150245914}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &1165361954 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4923621884956650715, guid: ce8aaf77464a1ad4da94559f0225d29a, type: 3}
@@ -2894,6 +3479,85 @@ MonoBehaviour:
   partName: 
   description: 
   logSelection: 1
+--- !u!1 &1199469367
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1199469370}
+  - component: {fileID: 1199469369}
+  - component: {fileID: 1199469368}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1199469368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199469367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.UI.InputSystemUIInputModule
+  m_SendPointerHoverToParent: 1
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
+  m_ScrollDeltaPerTick: 6
+--- !u!114 &1199469369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199469367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventSystem
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1199469370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199469367}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1225825824 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7958409323192689485, guid: ce8aaf77464a1ad4da94559f0225d29a, type: 3}
@@ -2933,8 +3597,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 337a6d78eae1b0341abf98af6dda2272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Part
-  partName: 
-  description: 
+  partName: "Sadales v\u0101rpsta"
+  description: "T\u0101s galvenais uzdevums ir atv\u0113rt un aizv\u0113rt motora
+    v\u0101rstus prec\u012Bz\u0101 laik\u0101. Sadales v\u0101rpsta darbojas sinhroni
+    ar klo\u0137v\u0101rpstu un kontrol\u0113 gaisa un degvielas iepl\u016Bdi, k\u0101
+    ar\u012B izpl\u016Bdes g\u0101zu novad\u012B\u0161anu no cilindriem. V8 motoros
+    parasti ir vair\u0101kas sadales v\u0101rpstas \u2014 atkar\u012Bb\u0101 no motora
+    konstrukcijas."
   logSelection: 1
 --- !u!1 &1247887616
 GameObject:
@@ -3033,6 +3702,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   highlightMaterial: {fileID: 2100000, guid: 7a464e02db568d4409b8647bb857481c, type: 2}
   playerCamera: {fileID: 0}
+  infoPanel: {fileID: 1142548545}
 --- !u!1 &1423784753 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1619035203956873500, guid: ce8aaf77464a1ad4da94559f0225d29a, type: 3}
@@ -3240,8 +3910,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 337a6d78eae1b0341abf98af6dda2272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Part
-  partName: 
-  description: 
+  partName: "Izpl\u016Bdes kolektors."
+  description: "T\u0101 galvenais uzdevums ir sav\u0101kt izpl\u016Bdes g\u0101zes
+    no visiem cilindriem un novad\u012Bt t\u0101s t\u0101l\u0101k uz izpl\u016Bdes
+    sist\u0113mu. V8 motor\u0101 katrai cilindru rindai parasti ir savs izpl\u016Bdes
+    kolektors. Tas ir svar\u012Bgs dzin\u0113ja darb\u012Bbai, jo pal\u012Bdz efekt\u012Bvi
+    izvad\u012Bt g\u0101zes un ietekm\u0113 motora jaudu, ska\u0146u un izpl\u016Bdes
+    pl\u016Bsmu."
   logSelection: 1
 --- !u!1 &1570332342 stripped
 GameObject:
@@ -3408,8 +4083,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 337a6d78eae1b0341abf98af6dda2272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Part
-  partName: 
-  description: 
+  partName: Karteris
+  description: "T\u0101 galvenais uzdevums ir uzglab\u0101t motore\u013C\u013Cu dzin\u0113ja
+    apak\u0161da\u013C\u0101. Karteris sav\u0101c e\u013C\u013Cu p\u0113c t\u0101s
+    cirkul\u0101cijas caur motoru, lai e\u013C\u013Cas s\u016Bknis to var\u0113tu
+    atk\u0101rtoti padot dzin\u0113ja e\u013C\u013Co\u0161anai. Tas ar\u012B pal\u012Bdz
+    dzes\u0113t e\u013C\u013Cu un aizsarg\u0101 motora apak\u0161\u0113j\u0101s komponentes."
   logSelection: 1
 --- !u!1 &1744254452 stripped
 GameObject:
@@ -3450,8 +4129,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 337a6d78eae1b0341abf98af6dda2272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Part
-  partName: 
-  description: 
+  partName: "E\u013C\u013Cas filtrs"
+  description: "T\u0101 galvenais uzdevums ir att\u012Br\u012Bt motore\u013C\u013Cu
+    no net\u012Brumiem, met\u0101la da\u013Ci\u0146\u0101m un citiem piemais\u012Bjumiem.
+    E\u013C\u013Cas filtrs pal\u012Bdz uztur\u0113t t\u012Bru e\u013C\u013Co\u0161anas
+    sist\u0113mu un pasarg\u0101 dzin\u0113ja komponentes no priek\u0161laic\u012Bga
+    nodiluma."
   logSelection: 1
 --- !u!1 &1754641528 stripped
 GameObject:
@@ -3660,8 +4343,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 337a6d78eae1b0341abf98af6dda2272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Part
-  partName: 
-  description: 
+  partName: "Izpl\u016Bdes kolektors."
+  description: "T\u0101 galvenais uzdevums ir sav\u0101kt izpl\u016Bdes g\u0101zes
+    no visiem cilindriem un novad\u012Bt t\u0101s t\u0101l\u0101k uz izpl\u016Bdes
+    sist\u0113mu. V8 motor\u0101 katrai cilindru rindai parasti ir savs izpl\u016Bdes
+    kolektors. Tas ir svar\u012Bgs dzin\u0113ja darb\u012Bbai, jo pal\u012Bdz efekt\u012Bvi
+    izvad\u012Bt g\u0101zes un ietekm\u0113 motora jaudu, ska\u0146u un izpl\u016Bdes
+    pl\u016Bsmu."
   logSelection: 1
 --- !u!1 &1955095918 stripped
 GameObject:
@@ -3786,8 +4474,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 337a6d78eae1b0341abf98af6dda2272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Part
-  partName: 
-  description: 
+  partName: "V\u0101rstu v\u0101ks"
+  description: "T\u0101 galvenais uzdevums ir nosegt motora v\u0101rstu meh\u0101nismu
+    un notur\u0113t motore\u013C\u013Cu dzin\u0113ja iek\u0161pus\u0113. Tas ar\u012B
+    aizsarg\u0101 dzin\u0113ja komponentes no net\u012Brumiem un mitruma"
   logSelection: 1
 --- !u!1 &2070524558 stripped
 GameObject:
@@ -3965,3 +4655,5 @@ SceneRoots:
   - {fileID: 1077194146}
   - {fileID: 1247887618}
   - {fileID: 788588295}
+  - {fileID: 1142548549}
+  - {fileID: 1199469370}
