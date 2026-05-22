@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(Renderer))]
@@ -14,6 +15,9 @@ public class Part : MonoBehaviour
     private Material[] originalMaterials;
     private bool isHighlighted;
 
+    private Vector3 originalPosition;
+    private Coroutine moveRoutine;
+
     public string PartName => string.IsNullOrEmpty(partName) ? gameObject.name : partName;
     public string Description => description;
 
@@ -21,6 +25,7 @@ public class Part : MonoBehaviour
     {
         rend = GetComponent<Renderer>();
         originalMaterials = rend.sharedMaterials;
+        originalPosition = transform.position;
     }
 
     public void ApplyHighlight(Material highlightMaterial)
@@ -43,6 +48,36 @@ public class Part : MonoBehaviour
     public void OnSelected()
     {
         if (logSelection) Debug.Log($"Selected: {PartName}");
-        // TODO: show info panel, start shoot-out animation
+    }
+
+    public void PullToward(Vector3 cameraPos, float distance, float duration)
+    {
+        Vector3 dir = (cameraPos - originalPosition).normalized;
+        StartMove(originalPosition + dir * distance, duration);
+    }
+
+    public void ReturnToOrigin(float duration)
+    {
+        StartMove(originalPosition, duration);
+    }
+
+    private void StartMove(Vector3 target, float duration)
+    {
+        if (moveRoutine != null) StopCoroutine(moveRoutine);
+        moveRoutine = StartCoroutine(MoveTo(target, duration));
+    }
+
+    private IEnumerator MoveTo(Vector3 target, float duration)
+    {
+        Vector3 from = transform.position;
+        float t = 0f;
+        while (t < duration)
+        {
+            t += Time.deltaTime;
+            float k = Mathf.SmoothStep(0f, 1f, t / duration);
+            transform.position = Vector3.Lerp(from, target, k);
+            yield return null;
+        }
+        transform.position = target;
     }
 }

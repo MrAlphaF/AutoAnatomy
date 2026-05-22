@@ -9,11 +9,16 @@ public class PartInteractor : MonoBehaviour
     [Header("Highlight")]
     [SerializeField] private Material highlightMaterial;
 
+    [Header("Animation")]
+    [SerializeField] private float pullDistance = 0.4f;
+    [SerializeField] private float animationDuration = 0.5f;
+
     [Header("References")]
     [SerializeField] private Camera playerCamera;
     [SerializeField] private InfoPanel infoPanel;
 
     private Part hoveredPart;
+    private Part selectedPart;
 
     void Start()
     {
@@ -24,7 +29,7 @@ public class PartInteractor : MonoBehaviour
     {
         UpdateHover();
         if (Input.GetMouseButtonDown(0)) HandleClick();
-        if (Input.GetMouseButtonDown(1) && infoPanel != null) infoPanel.Hide();
+        if (Input.GetMouseButtonDown(1)) Deselect();
     }
 
     private void UpdateHover()
@@ -44,15 +49,39 @@ public class PartInteractor : MonoBehaviour
 
     private void SetHovered(Part newPart)
     {
-        if (hoveredPart != null) hoveredPart.RemoveHighlight();
+        // Leave the selected part's highlight alone
+        if (hoveredPart != null && hoveredPart != selectedPart) hoveredPart.RemoveHighlight();
         hoveredPart = newPart;
-        if (hoveredPart != null) hoveredPart.ApplyHighlight(highlightMaterial);
+        if (hoveredPart != null && hoveredPart != selectedPart) hoveredPart.ApplyHighlight(highlightMaterial);
     }
 
     private void HandleClick()
     {
         if (hoveredPart == null) return;
-        hoveredPart.OnSelected();
-        if (infoPanel != null) infoPanel.Show(hoveredPart);
+
+        // Send the previous selection back first
+        if (selectedPart != null && selectedPart != hoveredPart)
+        {
+            selectedPart.ReturnToOrigin(animationDuration);
+            selectedPart.RemoveHighlight();
+        }
+
+        selectedPart = hoveredPart;
+        selectedPart.OnSelected();
+        selectedPart.ApplyHighlight(highlightMaterial);
+        selectedPart.PullToward(playerCamera.transform.position, pullDistance, animationDuration);
+
+        if (infoPanel != null) infoPanel.Show(selectedPart);
+    }
+
+    private void Deselect()
+    {
+        if (selectedPart != null)
+        {
+            selectedPart.ReturnToOrigin(animationDuration);
+            selectedPart.RemoveHighlight();
+            selectedPart = null;
+        }
+        if (infoPanel != null) infoPanel.Hide();
     }
 }
