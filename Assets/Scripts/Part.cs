@@ -16,6 +16,7 @@ public class Part : MonoBehaviour
     private bool isHighlighted;
 
     private Vector3 originalPosition;
+    private Quaternion originalRotation;
     private Coroutine moveRoutine;
 
     public string PartName => string.IsNullOrEmpty(partName) ? gameObject.name : partName;
@@ -26,7 +27,10 @@ public class Part : MonoBehaviour
         rend = GetComponent<Renderer>();
         originalMaterials = rend.sharedMaterials;
         originalPosition = transform.position;
+        originalRotation = transform.rotation;
     }
+
+    public Bounds GetWorldBounds() => rend.bounds;
 
     public void ApplyHighlight(Material highlightMaterial)
     {
@@ -50,34 +54,32 @@ public class Part : MonoBehaviour
         if (logSelection) Debug.Log($"Selected: {PartName}");
     }
 
-    public void PullToward(Vector3 cameraPos, float distance, float duration)
+    public void MoveTo(Vector3 target, float duration)
     {
-        Vector3 dir = (cameraPos - originalPosition).normalized;
-        StartMove(originalPosition + dir * distance, duration);
+        if (moveRoutine != null) StopCoroutine(moveRoutine);
+        moveRoutine = StartCoroutine(MoveRoutine(target, transform.rotation, duration));
     }
 
     public void ReturnToOrigin(float duration)
     {
-        StartMove(originalPosition, duration);
-    }
-
-    private void StartMove(Vector3 target, float duration)
-    {
         if (moveRoutine != null) StopCoroutine(moveRoutine);
-        moveRoutine = StartCoroutine(MoveTo(target, duration));
+        moveRoutine = StartCoroutine(MoveRoutine(originalPosition, originalRotation, duration));
     }
 
-    private IEnumerator MoveTo(Vector3 target, float duration)
+    private IEnumerator MoveRoutine(Vector3 targetPos, Quaternion targetRot, float duration)
     {
-        Vector3 from = transform.position;
+        Vector3 fromPos = transform.position;
+        Quaternion fromRot = transform.rotation;
         float t = 0f;
         while (t < duration)
         {
             t += Time.deltaTime;
             float k = Mathf.SmoothStep(0f, 1f, t / duration);
-            transform.position = Vector3.Lerp(from, target, k);
+            transform.position = Vector3.Lerp(fromPos, targetPos, k);
+            transform.rotation = Quaternion.Slerp(fromRot, targetRot, k);
             yield return null;
         }
-        transform.position = target;
+        transform.position = targetPos;
+        transform.rotation = targetRot;
     }
 }
