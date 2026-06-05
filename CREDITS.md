@@ -2,7 +2,7 @@
 
 This project uses the following third-party 3D models and assets under their respective licenses.
 
-## 3D Models
+## 3D Models — Sketchfab (CC BY 4.0, attribution required)
 
 ### V8 Engine Block
 - **Title:** Disassembled V8 Engine Block
@@ -12,37 +12,39 @@ This project uses the following third-party 3D models and assets under their res
 - **Modifications:** Reassembled, scaled, parts renamed to Latvian, split into individual GameObjects in Unity.
 
 ### Concrete Fence Low-Poly
-- **Title:** Concrete Fence Low-Poly
 - **Author:** Ricardo Sanchez (@380660711785)
 - **Source:** https://sketchfab.com/3d-models/concrete-fence-low-poly-c4779b41937f4a188abb1fbe48bc5b02
 - **License:** CC Attribution 4.0 International (CC BY 4.0)
-- **Published:** 2020-04-02
 
 ### Pallet_LP
-- **Title:** Pallet_LP
 - **Author:** Chursak
 - **Source:** https://sketchfab.com/3d-models/pallet-lp-4e9f5244fa9543f1bdd1fa3b169c3141
 - **License:** CC Attribution 4.0 International (CC BY 4.0)
 
 ### Mossy Wooden Crates
-- **Title:** Mossy Wooden Crates
 - **Author:** Kigha
 - **Source:** https://sketchfab.com/3d-models/mossy-wooden-crates-71b9bdd83db846fe9bd6e8b9eaf1dfc6
 - **License:** CC Attribution 4.0 International (CC BY 4.0)
-- **Published:** 2020-05-04
 
 ### Cinder Block
-- **Title:** Cinder block
 - **Author:** YN14R
 - **Source:** https://sketchfab.com/3d-models/cinder-block-3337fa74c7244dd68b9488d160fc459e
 - **License:** CC Attribution 4.0 International (CC BY 4.0)
-- **Published:** 2025-08-28
+
+## 3D Models — Poly Haven (CC0, public domain)
+
+All models below are licensed under CC0 from polyhaven.com/models. Attribution is not legally required, but is provided here as a courtesy to the creators.
+
+- **Barrel Stove** — https://polyhaven.com/a/barrel_stove
+- **Old Tyre** — https://polyhaven.com/a/old_tyre
+- **Rusted Wheel Rim 01** — https://polyhaven.com/a/rusted_wheel_rim_01
+- **Metal Tool Chest** — https://polyhaven.com/a/metal_tool_chest
+- **Metal Jerrycan** — https://polyhaven.com/a/metal_jerrycan
+- **Small Oil Can 01** — https://polyhaven.com/a/small_oil_can_01 (by Raven van de Werken)
 
 ## Textures
 
-### Concrete ground material
-- **Source:** Poly Haven (https://polyhaven.com/textures)
-- **License:** CC0 (Public Domain) — no attribution required
+- **Concrete ground material** — Poly Haven (CC0)
 
 ## Tools
 
@@ -53,5 +55,5 @@ This project uses the following third-party 3D models and assets under their res
 
 ## License of this project
 
-The original code in this project (Assets/Scripts/) is the work of the author.
+The original code in this project (`Assets/Scripts/`) is the work of the author.
 Third-party assets retain their original licenses as listed above.
